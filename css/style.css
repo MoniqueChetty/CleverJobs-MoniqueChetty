@@ -49,7 +49,7 @@ header {
     background-color: #1C1C24;
     height: 60px;
     border-radius: 10px;
-    border: 2px solid #222328;
+    /* border: 2px solid #222328; */
     display: flex;
     overflow: hidden;
 }
@@ -128,7 +128,7 @@ header {
     -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
-}
+
 
 .job-tile:hover {
     transform: scale(1.05);
@@ -187,13 +187,13 @@ header {
     align-items: center; 
     border-radius: 10px; 
     color: #96939B;
-    background-color: #2E2E39;
+    background: rgba(48, 31, 9, 0.623);
     font-size: 14px;
     -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
     -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
     box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
-}
+
 
 .apply-now {
     color: white;
