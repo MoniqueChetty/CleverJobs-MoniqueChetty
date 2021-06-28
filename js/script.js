@@ -18,11 +18,14 @@ function filterJobs(jobs, searchText) {
   if (searchText) {
     let filteredJobs = jobs.filter((job) => {
       if (
-        job.roleName.toLowerCase().includes(searchText) ||
-        job.type.toLowerCase().includes(searchText) ||
-        job.company.toLowerCase().includes(searchText) ||
-        job.requirements.content.toLowerCase().includes(searchText)
+        job.roleName.toLowerCase().includes(searchText.toLowerCase()) ||
+        job.type.toLowerCase().includes(searchText.toLowerCase()) ||
+        job.company.toLowerCase().includes(searchText.toLowerCase()) ||
+        job.requirements.content
+          .toLowerCase()
+          .includes(searchText.toLowerCase())
       ) {
+        console.log(job.roleName.toLowerCase());
         return true;
       } else {
         return false;
